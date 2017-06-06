@@ -1,23 +1,15 @@
 import Reporter.Reporter;
-import com.google.gson.Gson;
 import objects.RozetkaPage;
-
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import parser.Parser;
 import parser.RozetkaProductParser;
 
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
-import javax.script.ScriptException;
 import java.io.IOException;
-import java.net.URLDecoder;
-import java.util.Properties;
 
 public class Runner {
-    private final static Logger logger = LoggerFactory.getLogger(Runner.class);
+    final static Logger logger = LoggerFactory.getLogger(Runner.class);
 
     public static void main(String[] args) throws IOException {
         String id = args[0];
