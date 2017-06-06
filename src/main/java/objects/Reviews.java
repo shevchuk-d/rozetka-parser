@@ -11,7 +11,6 @@ public class Reviews extends RozetkaPageElement {
 
     public Reviews(Element element) {
         super(element);
-        System.out.println(element.html());
         this.quantity = countReviews();
     }
 
